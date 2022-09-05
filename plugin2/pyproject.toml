@@ -7,5 +7,5 @@ name = "my_plugin2"
 version = "1.0"
 description = "desc2"
 
-[project.entry-points.cogent3_plugins]
-myplugin = "my_plugin2:myfunc2"
+[project.entry-points."cogent3_plugins.database"]
+myplugin2 = "my_plugin2:myfunc2"

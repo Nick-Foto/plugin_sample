@@ -22,3 +22,4 @@ def load_register_plugins(group='cogent3_plugins'):
 
 load_register_plugins()
 load_register_plugins(group = "database_plugins")
+load_register_plugins(group = "cogent3_plugins.database")
