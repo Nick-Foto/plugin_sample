@@ -1,3 +1,11 @@
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_plugin4"
+version = "1.0"
+description = "desc4"
+
+[project.entry-points.cogent3_plugins]
+myplugin = "my_plugin4:myfunc4"
