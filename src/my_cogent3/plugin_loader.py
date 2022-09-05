@@ -14,9 +14,11 @@ def load_register_plugins(group='cogent3_plugins'):
             raise ValueError(f"The plugin {end_point.name} already registered!")
         _plugins[group].append(end_point)
 
+    print(f"\nEntry points of group {group} are:")
     for plugin in _plugins[group]:
         function = plugin.load()
         function()
 
 
 load_register_plugins()
+load_register_plugins(group = "database_plugins")
