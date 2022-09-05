@@ -2,7 +2,9 @@ from pkg_resources import iter_entry_points
 
 _plugins = {}
 
-def load_register_plugins(group='cogent3_plugins'):
+def load_register_plugins(group='general'):
+
+    group=f"cogent3_plugins.{group}"
 
     if group not in _plugins:
         _plugins[group] = []
@@ -20,6 +22,6 @@ def load_register_plugins(group='cogent3_plugins'):
         function()
 
 
-load_register_plugins()
-load_register_plugins(group = "database_plugins")
-load_register_plugins(group = "cogent3_plugins.database")
+load_register_plugins(group = "database")
+load_register_plugins(group = "general")
+load_register_plugins(group = "text")

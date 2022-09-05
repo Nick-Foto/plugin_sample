@@ -7,5 +7,5 @@ name = "project6"
 version = "1.0"
 description = "desc6"
 
-[project.entry-points.cogent3_plugins]
+[project.entry-points."cogent3_plugins.text"]
 myplugin = "project6.my_plugin6:myfunc6"
